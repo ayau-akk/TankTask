@@ -38,17 +38,17 @@ public class HelloApplication extends Application {
                         tank1.moveRight();
                     }
                     case W-> {
-//                        if (tank.getY()*map.getPixel()-map.getPixel()<=0){
-//                            return;
-//                        }
+                        if (tank.getY()*map.getPixel()-map.getPixel()<=0){
+                            return;
+                        }
                         System.out.println("UP");
                         tank.moveUp();
 
                     }
                     case S -> {
-//                        if (tank.getY()*map.getPixel()+map.getPixel()>=250){
-//                            return;
-//                        }
+                        if (tank.getY()*map.getPixel()+map.getPixel()>=250){
+                            return;
+                        }
                         System.out.println("DOWN");
                         tank.moveDown();
 
@@ -62,9 +62,9 @@ public class HelloApplication extends Application {
 
                     }
                     case D -> {
-//                        if (tank.getX()*map.getPixel()+map.getPixel()>=250){
-//                            return;
-//                        }
+                        if (tank.getX()*map.getPixel()+map.getPixel()>=stage.getWidth()){
+                            return;
+                        }
                         System.out.println("RIGHT");
                         tank.moveRight();
 

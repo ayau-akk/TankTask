@@ -83,7 +83,7 @@ public class Tank  {
     }
     public void shoot(){
         System.out.println("Shooting");
-        bullet.addbul(tank.getX()*map.getPixel(), tank.getY()*map.getPixel(),map.getPixel()/2);
+        bullet.addbul(tank.getX()*map.getPixel(), tank.getY()*map.getPixel(),map.getPixel());
         bullet.play();
     }
 }
