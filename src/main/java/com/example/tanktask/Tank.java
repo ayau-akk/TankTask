@@ -10,13 +10,14 @@ public class Tank  {
     private int health;
     private ImageView tank;
     private Map map;
+    private Bullet bullet;
 
     public Tank(Map map, int health,String type){
-
         this.map = map;
      this.x = map.getStart().getX()* map.getPixel();
      this.y = map.getStart().getY()*map.getPixel();
      this.health = health;
+     bullet = new Bullet(map);
      if (type.equals("BLACK")){
          tank= new ImageView(new Image("file:tank-assets/PNG/Tanks/tankBlack.png"));
          tank.setX(this.x);
@@ -57,19 +58,32 @@ public class Tank  {
     }
 
     public void moveUp(){
+        bullet.setDirection('U');
         this.y = this.y -1;
         tank.setY(tank.getY()-map.getPixel());
+        tank.setRotate(180);
     }
     public void moveDown(){
+        bullet.setDirection('D');
         this.y = this.y +1;
         tank.setY(tank.getY()+map.getPixel());
+        tank.setRotate(0);
     }
     public void moveLeft(){
+        bullet.setDirection('L');
         this.x = this.x-1;
         tank.setX(tank.getX()-map.getPixel());
+        tank.setRotate(90);
     }
     public void moveRight(){
+        bullet.setDirection('R');
         this.x = this.x+1;
         tank.setX(tank.getX()+map.getPixel());
+        tank.setRotate(270);
+    }
+    public void shoot(){
+        System.out.println("Shooting");
+        bullet.addbul(tank.getX()*map.getPixel(), tank.getY()*map.getPixel(),map.getPixel()/2);
+        bullet.play();
     }
 }

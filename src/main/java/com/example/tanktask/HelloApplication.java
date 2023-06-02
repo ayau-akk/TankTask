@@ -13,6 +13,9 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         Map map = new Map();
         Tank tank = new Tank(map,4,"BLACK");
+        Tank tank1 = new Tank(map,4,"BLUE");
+//        tank1.setX(map.getStart().getX()*map.getPixel()-map.getPixel());
+//        tank1.setY(map.getStart().getY()*map.getPixel()-map.getPixel());
         Scene scene = new Scene(map);
         stage.setTitle("Hello!");
         stage.setScene(scene);
@@ -22,27 +25,52 @@ public class HelloApplication extends Application {
         map.setOnKeyPressed(e->{
             try {
                 switch (e.getCode()) {
+                    case UP -> {
+                        tank1.moveUp();
+                    }
+                    case DOWN -> {
+                        tank1.moveDown();
+                    }
+                    case LEFT -> {
+                        tank1.moveLeft();
+                    }
+                    case RIGHT -> {
+                        tank1.moveRight();
+                    }
                     case W-> {
+//                        if (tank.getY()*map.getPixel()-map.getPixel()<=0){
+//                            return;
+//                        }
                         System.out.println("UP");
                         tank.moveUp();
 
                     }
                     case S -> {
+//                        if (tank.getY()*map.getPixel()+map.getPixel()>=250){
+//                            return;
+//                        }
                         System.out.println("DOWN");
                         tank.moveDown();
 
                     }
                     case A -> {
+                        if (tank.getX()*map.getPixel()-map.getPixel()<=0){
+                            return;
+                        }
                         System.out.println("LEFT");
                         tank.moveLeft();
 
                     }
                     case D -> {
+//                        if (tank.getX()*map.getPixel()+map.getPixel()>=250){
+//                            return;
+//                        }
                         System.out.println("RIGHT");
                         tank.moveRight();
 
                     }
                     case SPACE -> {
+                        tank.shoot();
                         System.out.println("SPACE");
                     }
 

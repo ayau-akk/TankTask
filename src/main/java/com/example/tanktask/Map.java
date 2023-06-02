@@ -10,15 +10,15 @@ public class Map extends Pane {
             {0,0,1,0,0},
             {0,0,0,0,0},
             {1,0,1,1,1},
-            {1,0,0,0,1},
+            {1,0,0,0,0},
             {1,0,1,0,2}};
 
     private int size;
-    private double pixel=80;
+    private double pixel=60;
     private ImageView img;
     private Position start;
     private Obstacle obstacle;
-    private Tank tank;
+    private Obstacle obstacles[];
 
     public Map()  {
         requestFocus();
@@ -45,6 +45,10 @@ public class Map extends Pane {
                     start=new Position(j,i);
                 }
                  else if (mapArray[i][j]==2){
+//                     ImageView imageView= new ImageView(new Image("file:tank-assets/PNG/Environment/dirt.png"));
+//                     imageView.setX(j* getPixel());
+//                     imageView.setY(i* getPixel());
+//                     getChildren().add(imageView);
                      start=new Position(j,i);
                  }
             }
