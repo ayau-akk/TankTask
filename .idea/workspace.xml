@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f51d2ce7-02dd-49b5-8029-ffeea54b3f81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tanktask/Bullet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tanktask/Obstacle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tanktask/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tanktask/Tank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TankTask.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TankTask/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TankTask/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tanktask/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tanktask/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tanktask/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tanktask/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tanktask/Obstacle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tanktask/Obstacle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tanktask/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tanktask/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tanktask/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tanktask/Tank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,5 +77,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
